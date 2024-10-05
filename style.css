@@ -1,0 +1,95 @@
+@font-face {
+    font-family: tg;
+    src: url("./Tajawal-Light.ttf");
+}
+* {
+    font-family: tg;
+    transition: 80ms;
+}
+*::selection{
+    background-color: #fff;
+    color: #7b7708;
+}
+@media only screen and (max-width: 700px) {
+    * {
+      display: none;
+    }
+  }
+
+.contents {
+    width: 650px;
+    margin: 20px auto;
+}
+h1 {
+    text-align: center;
+    color: #081c7b;
+}
+
+input,
+button {
+    width: 100%;
+    padding: 10px;
+    margin: 10px auto;
+}
+input{
+    direction: rtl;
+    text-indent: 5px;
+    border: none;
+    background-color: #eee;
+    border-bottom: 4px solid black;
+}
+input:focus{
+    border-bottom:6px solid #081c7b ;
+    outline: none;
+    border-top: solid 1px black;
+}
+button{
+    width: 673px;
+    border:1px solid #081c7b ;
+    font-size: 20px;
+    color: #081c7b;
+    cursor: pointer;
+    background-image: linear-gradient(to right, #fff, #ddd);
+
+}
+button:hover{
+    background-image: linear-gradient(to right, #fff, #cdcdae);
+}
+button#clear:hover{
+    background-image: linear-gradient(to right, #fff, #cdaeae);
+}
+button:focus{
+    background-image: linear-gradient(to right, #fff, #cdcdae);
+}
+#line {
+    width: 100%;
+    height: 300px;
+}
+
+h2{
+    text-align: right;
+        background-image: linear-gradient(to right, #fff, #ffffe2);
+}
+
+/* chart styleing ->  */
+
+.chart {  
+    position: absolute;  
+    background-color: #ffffd5;  
+    padding: 10px 20px;  
+    border-radius: 5px;   
+    z-index: 999;   
+    transition: 300ms;  
+    opacity: 0; 
+    right: 0px;
+}  
+.chart-title {  
+    font-weight: bold;  
+    margin-bottom: 5px;  
+}  
+.chart-label {  
+    font-size: 14px;  
+}  
+.chart.active {  
+    opacity: 1; 
+}

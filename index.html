@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>تمثيل التقدم   </title>
+    <script src="chart.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head> 
+<body>
+    <article class="contents">
+        <h1> إضافة بيانات التقدم</h1>
+        <input type="text" id="ti" placeholder="أدخل عنوان">
+        <input type="number" id="nu" placeholder="أدخل عدد" min="0" max="9999">
+        <button onclick="add()">إضافة بيانات</button>
+        <button onclick="clear()" id="clear"> تنظيف البيانات</button>
+        <!-- chart div -->
+        <h2>الرسم البياني</h2>
+        <div class="chart">   
+            <span class="chart-title"></span>  
+            <span class="chart-label"></span>  
+        </div>
+        <canvas id="line"><!-- this is chart. js --></canvas>
+    </article>
+
+    <script src="script.js"></script>
+</body>
+</html>
